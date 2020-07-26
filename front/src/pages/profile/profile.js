@@ -38,6 +38,14 @@ export default function Tester() {
       <h2 className={"content-block"}>{connected}</h2>
 
       <div className={"content-block dx-card responsive-paddings"}>
+        {messages.map((item, index) => (
+          <p className={"speech-bubble"} key={index}>
+            {item}
+          </p>
+        ))}
+        <span>{notes}</span>
+      </div>
+      <div className={"content-block dx-card responsive-paddings"}>
         <form
           action="your-action"
           onSubmit={(e) => {
@@ -69,15 +77,6 @@ export default function Tester() {
             </Item>
           </Form>
         </form>
-      </div>
-
-      <div className={"content-block dx-card responsive-paddings"}>
-        {messages.map((item, index) => (
-          <p className={"speech-bubble"} key={index}>
-            {item}
-          </p>
-        ))}
-        <span>{notes}</span>
       </div>
     </React.Fragment>
   );
