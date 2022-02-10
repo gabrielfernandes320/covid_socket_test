@@ -9,7 +9,7 @@
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-scripts": "3.4.1",
-    "node-sass": "^4.11.0",
+    "node-sass": "^7.0.0",
     "react-router-dom": "^5.0.0",
     "react-app-polyfill": "^1.0.0",
     "devextreme": "20.1-stable",
